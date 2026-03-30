@@ -30,6 +30,9 @@ python -m pip install opencv-python==4.9.0.80
     -c nvidia/label/cuda-11.8.0 \
     cuda-toolkit cuda-nvcc -y
 
+# This tells the script where to find the 'nvcc' compiler you just installed
+export PATH="/kaggle/working/mamba/envs/MambaPro/bin:$PATH"
+
 # Define the python path
 env_python="/kaggle/working/mamba/envs/MambaPro/bin/python"
 
